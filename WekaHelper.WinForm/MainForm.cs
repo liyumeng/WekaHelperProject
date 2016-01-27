@@ -81,13 +81,25 @@ namespace WekaHelper.WinForm
                 {
                     if (h.HasChosen == false)
                         continue;
-                    sb.Clear();
-                    foreach (var k in h.ValueSet)
+                    if (h.Type == ColumnType.Nominal)
                     {
-                        sb.Append(k);
-                        sb.Append(',');
+                        sb.Clear();
+                        foreach (var k in h.ValueSet)
+                        {
+                            sb.Append(k);
+                            sb.Append(',');
+                        }
+                        sw.WriteLine($"@attribute {h.Name} " + "{" + sb.ToString().TrimEnd(',') + "}");
                     }
-                    sw.WriteLine($"@attribute {h.Name}" + "{" + sb.ToString().TrimEnd(',') + "}");
+                    else if (h.Type == ColumnType.Numeric)
+                    {
+                        sw.WriteLine($"@attribute {h.Name} numeric");
+                    }
+                    else if (h.Type == ColumnType.String)
+                    {
+                        sw.WriteLine($"@attribute {h.Name} string");
+                    }
+
                 }
                 sw.WriteLine();
 
