@@ -11,3 +11,5 @@ Weka导入的arff格式文件，需要在其中设置每列属于哪种类型的
 2. 列名不能有重复
 3. 各单元格值不能为空
 4. 文件编码格式为utf-8
+
+下载地址：[Weka助手.exe](https://raw.githubusercontent.com/liyumeng/WekaHelperProject/master/%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/Weka%E5%B0%8F%E5%8A%A9%E6%89%8B.exe)
