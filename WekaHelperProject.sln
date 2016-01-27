@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WekaHelper.WinForm", "WekaHelper.WinForm\WekaHelper.WinForm.csproj", "{976221E6-7503-489F-A1B2-D60BE9EFC5A6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "可执行文件", "可执行文件", "{FB1FBCFA-7993-4EE1-AC1F-0146167A1A87}"
+	ProjectSection(SolutionItems) = preProject
+		可执行文件\Weka小助手.exe = 可执行文件\Weka小助手.exe
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
